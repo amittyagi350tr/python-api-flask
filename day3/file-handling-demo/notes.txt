@@ -1,0 +1,15 @@
+Person                                               
+Name   age   Gender         
+
+
+Product
+id   price   category
+
+
+one person may own multiple products but 1 product cannot have multiple owners (persons)
+
+Many to one relationship
+One-to-one relationship
+
+20%                               30%                10%          20%             20%
+requirement-gathering----->designing-phase------->coding--------->testing-----> deployment efforts

@@ -1,0 +1,18 @@
+a library : a collection of functionalities for a very import purpose![not a technical term in python]
+
+
+
+                                                        PACKAGE
+                                                         |
+                                                         |
+                                                         |
+(a collection of variables, functions and classes 
+FOR A COMMON PURPOSE )
+
+    MODULE1                                                  MODULE2    ....    MODULEN
+         |
+         |
+-----------------------------
+variable, function or a class
+
+[objects]

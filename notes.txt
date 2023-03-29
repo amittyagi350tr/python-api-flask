@@ -1,0 +1,10 @@
+project1                            project2     
+pandas==1.5.3                        pandas 2.0.0
+python 3.11                          python 3.7
+plotly==1.5.1
+Flask
+SQLAlchemy
+FlaskSQLAlchemy
+
+
+pip install -r  <path-of-requirements.file>

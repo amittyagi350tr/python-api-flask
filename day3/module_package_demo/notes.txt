@@ -1,0 +1,51 @@
+A)import mymodule : we only block the module name as a variable. accessing a functionality using module name as a feature
+
+        ----> mymodule.square()
+        ----> obj = mymodule.DataGenerator()
+
+B) import mymodule as mm : we are giving a alias (alternate name) to the module
+        ---> mm.square()
+        ----> obj = mm.DataGenerator()
+
+
+C) from mymodule import square : we are directly capabale of accessing square feature
+                ----> square() #this works
+
+                mymodule.DataGenerator() ## error as mymodule was never imported as a whole
+
+
+D) from mymodule import square, __version__ : we are directly capabale of accessing square & __version__ feature
+                ----> square() #this works
+                ---->print(__version__) #this works
+
+
+                mymodule.DataGenerator() ## error as mymodule was never imported as a whole
+
+
+#NOT RECOMMMENDED
+E) from mymodule import * : all features of mymodule have been loaded BUT INDEPENDENTLY.Module prefix is not necessary
+                ----> square() #this works
+                ---->print(__version__) #this works
+                ----> MyDataGenerator()
+
+
+
+
+
+
+
+
+
+
+
+module_package_demo : CURRENT PROJECT
+
+
+mypackage : this is the package where my modules are being maintained
+
+
+mymodule : One module
+displaymodule : another module in the same package
+
+
+app.py : MAIN SCRIPT (application starts executing from here!)

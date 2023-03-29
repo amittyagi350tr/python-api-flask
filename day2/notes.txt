@@ -1,0 +1,50 @@
+### FUNCTIONS ARE FIRST CLASS CITIZENS OF PYTHON LANGUAGE
+
+    functions get treated the same way as objects of any other data type in python
+
+
+1) Every variable has a data type: Functions should have a proper data type
+2) A variable is allowed to passed as an argument to a function: Function objects should also be
+    allowed to be passed as arguments TO OTHER FUNCTIONS!
+3) A variable can be stored in a data collection: a function object should also get stored in 
+    a data collection
+
+4) A variable can be returned from a function. A function object can be returned from a function
+
+5) a variable's reference can be copied into another variable. a function's address can be copied into another 
+variable also
+
+
+
+
+
+
+
+User wants to make an entry of a new employee into the database using our API
+
+
+User
+                                   take data from this form                                                        [Id, Name, Age, Salary]
+web-app(website)         [FORM] ----------------->              API-------------------------->                      SQL TABLE
+------------>                                                   class Employee(employee_name, employee_age,
+                                                                        employee_salary, employee_id)
+
+                   name: Harshit
+                   age: 32
+                   salary: 45000.f
+                   eid : 101
+
+
+
+There are some methods that can work with objects 
+        -Every object has  a property called "name"
+        -obj1.update_name() #only update_name for obj1 object
+        -use self and regular methods for such cases!
+
+
+
+There are some methods that ONLY need to work with class name
+
+        -update a class member for e.g College_name
+
+        Student.college_name()
