@@ -1,0 +1,10 @@
+
+DATABASE        <-----------------    MODEL   <--------------------------------------------> app.py
+                                    Employee
+    
+    SQL TABLE [Employee]
+
+
+
+
+    
