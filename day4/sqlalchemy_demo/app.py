@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import Base,Employee
+from models import Base,Employee, Project
 
 ##create a database
 
@@ -27,9 +27,13 @@ session = Session_Class()
 
 e1 = Employee(eid=101,name="Harshit", age=32, location="Mumbai", salary=40000)
 e2 = Employee(eid=202,name="Shreyanshi",age = 31, location="Bengaluru", salary=50000)
+p1 = Project(pid=1111, name="API development")
 
 #notice how add_all performed (INSERT INTO TABLE NAME QUERY automatically)
-session.add_all([e1,e2])
+session.add_all([e1,e2,p1])
+
+
+
 session.commit()
 
 

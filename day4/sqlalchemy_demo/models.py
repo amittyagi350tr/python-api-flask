@@ -22,3 +22,18 @@ class Employee(Base):
 
     def __repr__(self) -> str:
         return f"{self.__dict__}"
+    
+
+class Project(Base):
+
+    __tablename__ = "Project"  
+
+    project_id = Column("project_id", Integer, primary_key=True)
+    project_name = Column("project_name", String)
+  
+    def __init__(self,pid,name) -> None:
+        self.project_id=pid
+        self.project_name = name
+  
+    def __repr__(self) -> str:
+        return f"{self.__dict__}"
