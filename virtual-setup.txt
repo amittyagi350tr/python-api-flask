@@ -1,0 +1,37 @@
+Virtual Environment : Isolated project setup.
+
+ONE TIME SETUP: at the start of the project
+
+
+step 1 : python -m venv  <name-of virtual environment>
+            e.g : python -m venv    python_api_development
+
+Notes:
+        a) the virtual environment is created in the main folder of your project
+
+step 2: installing all required dependencies (libraries you need to complete the project)
+
+            a) Create a requirements.txt file in the main folder/virtual environent of your project.
+            b) List the name of all libraries to be installed
+            c) run a command
+                    pip install -r   <path of your requiremnts.txt>
+                   e.g: pip install -r  /home/Harshit/Desktop/python_api_development/requirements.txt
+
+
+
+EACH TIME YOU START NEW SESSION OF DEVELOPMENT
+
+Windows
+        type the path of activate.ps1 file(inside Scripts directory of your virtual environent folder)
+        in the terminal
+    
+
+MAC & Linux:
+        source  <path of activate file from lib directory of virtual environent>
+
+Note:
+    Activated environment is visible on your terminal prompt usually
+
+ONE FINAL THING : select the name of your virtual environment in VS Code
+            -either from top right in jupyter notebook (ipynb file)
+            -or bottom from .py file
