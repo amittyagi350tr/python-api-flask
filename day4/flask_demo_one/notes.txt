@@ -1,0 +1,41 @@
+API : an interface to access functionalities of something!
+
+
+
+software : Employee management tool
+
+objective : Make APIs that allow users to access features/functionalities of 
+            our Employee management tool
+
+
+
+                          JSON object                      SQL queries
+user<---> info         <------------>    PYTHON_API_LAYER<-------------->  database
+        [  web-page    ]               (we are making this)
+
+
+a) authenticate the user (login mechanism (check password!))
+b) capture info from user into a web-based application (html, css, javascript files or use a framework
+as well : Angular, React,etc)
+c) User's interaction (button clicking, entering text in pages, etc) they need to mapped to proper 
+    data units (JSON Objects) and this process has to happen without user noticing anything
+
+d) json inputs need to get converted into python objects AND VICE VERSA
+
+
+#### c and d steps are handled by Flask!
+
+e) python objects into SQL rows and VICE VERSA (SQLAlchemy)
+
+
+
+#READ: fetch information of somekind (from the server)
+#CREATE: Insert new information into the backend via APIs made accessible by the server
+#UPDATE : Try to change something in the backend via APIs made accessible by the server
+#DELETE : Delete something from the backend via APIs made accessible by the server
+
+terms from databases         terms from web app
+READ<------------------->GET request
+CREATE<------------------> POST request
+UPDATE<---------------> PUT Request
+DELETE<-----------------> DELETE REQUEST
