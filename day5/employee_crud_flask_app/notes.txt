@@ -1,0 +1,35 @@
+Objective : Employee management portal using Flask Framework
+
+Features
+
+1) Fetch all records from the database table (GET)
+2) Add entry for a new employee into the database table(POST)
+3) Ability to delete employee based on an employee Id mentioned by user(DELETE)
+4) Ability to modify details of an existing employee based on employee ID(PUT)
+
+Notes:
+    1) We should have a form based interaction with the user
+    2) We should be able to authenticate user based on emailID and password
+
+
+Concepts:
+
+    a) app.route (or its variants app.get, app.post, etc)
+        End-point creation or URL mapping of APIs with features
+    b) render_template : allows you to show an HTML file in response to a GET request
+    c) redirect & url_for : transfer user from one URL end-point to another
+    d) SQLAlchemy and Flask (Flask-SQLAlchemy) to create tables & manage SQL query operations without
+        writing SQL queries ourseleves
+
+
+endpoints:
+1)   "/" GET: landing page [DONE]
+2)   "/employee" POST :capture data from create_employee form [DONE]
+3)   "/employee" GET : DISPLAY create_employee FORM [DONE]
+4)   "/details"  GET : show all records [DONE]
+5)   "/employee?eid=id" DELETE : delete the employee with given ID
+6)   "/employee?eid=id" UPDATE : UPDATE the employee with given ID
+7)   BONUS APIs
+
+
+one row SQL  = one python object

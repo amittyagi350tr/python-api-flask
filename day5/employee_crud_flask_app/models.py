@@ -24,6 +24,16 @@ db=SQLAlchemy(app) #instance of flask and instance of SQLAlchemy is connected
 
 @dataclass
 class Employee(db.Model):
+
+    #attributes for the class and mentioned their
+    #expected data type
+    #Python will make a constructor & repr for these attributes
+
+    eid : int
+    ename : str
+    eage : int
+
+    #serialization : converting python fields to sql fields
     eid = db.Column(db.Integer, primary_key=True)
     ename = db.Column(db.String(20), nullable=False)
     eage = db.Column(db.Integer, nullable=False)
