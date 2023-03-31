@@ -33,7 +33,6 @@ p1 = Project(pid=1111, name="API development")
 session.add_all([e1,e2,p1])
 
 
-
 session.commit()
 
 
@@ -46,3 +45,8 @@ step 3: PYTHON data is translated by SQL Alchemy into SQL rows
         BASED ON SOME REFERENCE SCHEMA (implemented as a class in python)
 step 4: data reaches SQL database table as a SQL row
 """
+
+
+# Interest or Curiosity in APIs
+# Project requirement (current or upcoming)
+# None of the above (adding to a skillset)

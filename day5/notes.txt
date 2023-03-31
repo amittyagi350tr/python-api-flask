@@ -39,3 +39,22 @@ READ<------------------->GET request
 CREATE<------------------> POST request
 UPDATE<---------------> PUT Request
 DELETE<-----------------> DELETE REQUEST
+
+
+
+
+
+
+
+
+
+[for small demonstrations:individual features]    [final_project: all features connected]
+
+Flask_demo_one                                  employee_crud_flask_app
+
+
+templates
+    -landing.html
+    -app.html                                                       templates
+models.py                                                          models.py
+app.py                                                               app.py

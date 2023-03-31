@@ -8,3 +8,64 @@ FlaskSQLAlchemy
 
 
 pip install -r  <path-of-requirements.file>
+
+
+
+
+data.csv
+data.xlsx
+data.json
+data.xml
+
+
+2 rows of data are present in data.csv, data.xlsx & data.json
+
+a) Combine data coming all 3 files
+
+    result : one common table of 6 rows (Name, Age & Salary)
+
+data.xml has 6 rows of Location information
+
+a) concatenate location information & rows from previous to get one final 
+table
+
+Name, Age, Salary, Location
+
+
+BONUS: send final table into a database!!!
+
+
+
+
+library : is an external code package/module that you need for your project
+
+Note: Our project is linked to our virtual environment
+
+
+pip install <name-of-the-library>
+
+e.g : pip install pandas
+
+
+we need our library to be visible in our current project----> in our virtual environment
+
+so type install commands when you have activated the virtual environment already!
+
+
+
+open only one terminal at a time using shortcut ctrl backtick(`)
+
+
+
+
+requirements.txt
+
+
+
+
+
+END-GOAL
+
+
+              info          (python)         JSON
+database--------------->     API-LAYER----------------->FRONT-END
