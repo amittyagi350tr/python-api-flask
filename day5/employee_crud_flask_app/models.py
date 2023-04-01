@@ -19,7 +19,8 @@ app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///records.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-      
+app.secret_key = "super secret key"
+
 db=SQLAlchemy(app) #instance of flask and instance of SQLAlchemy is connected
 
 @dataclass
@@ -37,6 +38,24 @@ class Employee(db.Model):
     eid = db.Column(db.Integer, primary_key=True)
     ename = db.Column(db.String(20), nullable=False)
     eage = db.Column(db.Integer, nullable=False)
+
+
+
+@dataclass
+class User(db.Model):
+    name : str
+    age : int
+    email : str
+    password : str
+
+ #serialization : converting python fields to sql fields
+    email = db.Column(db.String, primary_key=True)
+    name = db.Column(db.String(20), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    password=db.Column(db.String(1000), nullable=False)
+
+
+
 
 with app.app_context():
     db.create_all()
